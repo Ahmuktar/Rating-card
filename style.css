@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+.rating-card{
+    width: 340px;
+    padding: 1.5rem;
+    background-color: hsl(213, 19%, 15%);
+    border-radius: 20px;
+}
+.ball{
+    height: 20px;
+    width: 20px;
+    background-color: hsl(213, 20%, 20%);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: hsl(0, 0%, 100%);
+    transition: all .3s;
+}
+.ball img{
+    width: 15px;
+}
+.rating-card h1{
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+    margin: 20px 0;
+    font-family: 'Overpass',sans-serif;
+}
+.rating-card p{
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+    line-height: 1.3rem;
+}
+.rating-card .rate-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.rating-card .rate-list p{
+    font-weight: 700;
+}
+.rating-card .rate-list .ball:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.rating-card .rate-list .ball:hover + :nth-child(-4){
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+.rating-card a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    cursor: pointer;
+}
+.rating-card a:hover{
+    color: hsl(25, 97%, 53%);
+}
+.rating-card button{
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 0;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all .3s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.rating-card button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center img{
+    width: 150px;
+}
+.center .rate{
+    background-color: hsl(213, 20%, 20%);
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    opacity: .7;
+    margin-top: 25px;
+    font-size: 14px;
+}
+.center .h1{
+    margin-top: 20px;
+    font-weight: 100;
+    font-family: 'Overpass', sans-serif;
+}
+.center p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.3rem;
+    margin-bottom: 10px;
+}
